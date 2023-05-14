@@ -1,0 +1,7 @@
+.table__content{
+    text-align: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(120, 250, 120);
+}
