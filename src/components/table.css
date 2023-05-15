@@ -1,7 +1,34 @@
-.table__content{
+.table__title{
+    margin: 20px 0;
     text-align: center;
+}
+
+.table__weekType{
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: rgb(250, 120, 120);
+}
+
+.table__today{
     width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgb(120, 250, 120);
+}
+
+.table__tomorrow{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(200, 235, 255);
 }

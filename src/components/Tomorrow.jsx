@@ -2,13 +2,14 @@ import React from 'react';
 import TableContent from './TableContent';
 import './table.css'
 
-const Today = ({table}) => {
+const Tomorrow = ({table}) => {
 
     const date = new Date()
     const studyStarts = new Date("February 9, 2023 00:00:00")
+    // const studyEnds = new Date("September 1, 2023 00:00:00")
     
     const moment = date - studyStarts
-    const days = (((moment / 1000)/60)/60)/24 + 3
+    const days = (((moment / 1000)/60)/60)/24 + 4
 
     let weekType = ''
 
@@ -31,14 +32,14 @@ const Today = ({table}) => {
 
     return (
         <div>
-            <h3 className='table__weekType'>{weekType}</h3>
-            <h1 className='table__title'>Şu günki sapaklar</h1>
+            <h1 className='table__title'>Ertirki sapaklar</h1>
+            {/* <h3 className='table__weekType'>{weekType}</h3> */}
             {todaysTable.map(day => (
-                    <TableContent tableContent={day} className='today' key={day.id}/>
+                    <TableContent tableContent={day} className='tomorrow' key={day.id}/>
             ))
             }
         </div>
     );
 }
 
-export default Today;
+export default Tomorrow;

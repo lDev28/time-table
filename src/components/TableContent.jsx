@@ -1,9 +1,9 @@
 import React from 'react';
 import './table.css'
 
-const TableContent = ({tableContent}) => {
+const TableContent = ({tableContent, className}) => {
     return (
-        <div className='table__content'>
+        <div className={'table__' + className}>
             <h2>{tableContent.lesson}</h2>
             <p>{tableContent.type}</p>
             <h4>{tableContent.teacher}</h4>
